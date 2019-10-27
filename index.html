@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search List with Pagination in Jquery</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="search-box-contents">
+        <div class="search-box">
+            <img id="search_btn" class="search-icon cursor-pointer" src="./assets/search-icon.png" alt />
+            <input id="search_tbox" type="text" class="input-box" maxlength="120" placeholder="Search for products...">
+        </div>
+        <img id="favorite_btn" class="home-fav-icon cursor-pointer" src="./assets/fav-selected.png" alt />
+    </div>
+
+    <div class="product-container">
+        <h3 class="text-center">Product List</h3>
+        <div id="productListID" class="product-search-list"></div>
+        <div class="text-center pagination-container">
+            <div class="pagination" id="paginationPanel">
+                <a href="#">Prev</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="favorites-container">
+        <h3 class="text-center">My Favorites</h3>
+        <div id="favoriteListID" class="product-search-list"></div>
+    </div>
+
+    <h2 class="no-data-found text-center">No data found</h2>
+
+</body>
+
+<style>
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="main.js"></script>
+
+</html>
